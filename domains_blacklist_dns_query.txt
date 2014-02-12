@@ -1,0 +1,8 @@
+iptables -A INPUT -p udp --dport 53 -m string --from 30 --to 50 --algo bm --hex-string '|01780a7869707a65727373636303636f6d00|' -j DROP -m comment --comment "DROP DNS Q ANY Name: x.xipzersscc.com"
+iptables -A INPUT -p udp --dport 53 -m string --from 30 --to 60 --algo bm --hex-string '|057064646f7303636f6d00|' -j DROP -m comment --comment "DROP DNS Q pddos.com"
+iptables -A INPUT -p udp --dport 53 -m string --from 30 --to 50 --algo bm --hex-string '|09686363666f72756d73026e6c0000ff|' -j DROP -m comment --comment "DROP DNS Q ANY hccforums.nl"
+iptables -A INPUT -p udp --dport 53 -m string --from 30 --to 54 --algo bm --hex-string '|0973617665726f61647302727500|' -j DROP -m comment --comment "DROP DNS Q saveroads.ru"
+iptables -A INPUT -p udp --dport 53 -m string --from 30 --to 54 --algo bm --hex-string '|0948697a62756c6c6168026d6500|' -j DROP -m comment --comment "DROP DNS Q Hizbullah.me"
+iptables -A INPUT -p udp --dport 53 -m string --from 32 --to 44 --algo bm --hex-string '|076765726461723302727500|' -j DROP -m comment --comment "DROP DNS Q gerdar3.ru"
+iptables -A INPUT -p udp --dport 53 -m string --from 32 --to 56 --algo bm --hex-string '|77777705677839313103636f6d00|' -j DROP -m comment --comment "DROP DNS Q www.gx911.com"
+iptables -A INPUT -p udp --dport 53 -m string --from 32 --to 56 --algo bm --hex-string '|777777053939397170036e657400|' -j DROP -m comment --comment "DROP DNS Q www.999qp.net"
