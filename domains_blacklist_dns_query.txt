@@ -6,3 +6,4 @@ iptables -A INPUT -p udp --dport 53 -m string --from 30 --to 54 --algo bm --hex-
 iptables -A INPUT -p udp --dport 53 -m string --from 32 --to 44 --algo bm --hex-string '|076765726461723302727500|' -j DROP -m comment --comment "DROP DNS Q gerdar3.ru"
 iptables -A INPUT -p udp --dport 53 -m string --from 32 --to 56 --algo bm --hex-string '|77777705677839313103636f6d00|' -j DROP -m comment --comment "DROP DNS Q www.gx911.com"
 iptables -A INPUT -p udp --dport 53 -m string --from 32 --to 56 --algo bm --hex-string '|777777053939397170036e657400|' -j DROP -m comment --comment "DROP DNS Q www.999qp.net"
+iptables -A INPUT -p udp --dport 53 -m string --from 32 --to 40 --algo bm --hex-string '|03646f6303676f7600|' -j DROP -m comment --comment "DROP DNS Q doc.gov"
